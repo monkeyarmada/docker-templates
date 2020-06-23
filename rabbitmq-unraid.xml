@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>rabbitmq</Name>
+  <Repository/>
+  <Registry/>
+  <Network>none</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>rabbitmq test</Overview>
+  <Category>Cloud: Tools:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1592934508</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>rabbitmq test</Description>
+  <Networking>
+    <Mode>none</Mode>
+    <Publish/>
+  </Networking>
+  <Data/>
+  <Environment/>
+  <Labels/>
+</Container>
