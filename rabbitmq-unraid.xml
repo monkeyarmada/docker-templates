@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>rabbitmq</Name>
-  <Repository/>
-  <Registry/>
-  <Network>none</Network>
+  <Repository>rabbitmq:3</Repository>
+  <Registry>https://hub.docker.com/_/rabbitmq</Registry>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
@@ -14,18 +14,25 @@
   <WebUI/>
   <TemplateURL/>
   <Icon/>
-  <ExtraParams/>
+  <ExtraParams>--hostname test-data</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1592934508</DateInstalled>
+  <DateInstalled>1592945075</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>rabbitmq test</Description>
   <Networking>
-    <Mode>none</Mode>
-    <Publish/>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>5672</HostPort>
+        <ContainerPort>5672</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
   </Networking>
   <Data/>
   <Environment/>
   <Labels/>
+  <Config Name="Host Port 1" Target="5672" Default="" Mode="tcp" Description="Container Port: 5672" Type="Port" Display="always" Required="false" Mask="false">5672</Config>
 </Container>
